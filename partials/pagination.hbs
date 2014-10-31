@@ -1,0 +1,13 @@
+{{!-- In this file you can override your pagination --}}
+<nav class="pagination">
+    <div class="pagination__wrap">
+	    {{#if prev}}
+          <a class="pagination__item pagination__item--link pagination__item--older" href="{{page_url prev}}">前滚翻</a>
+      {{/if}}
+	   	<span class="pagination__item pagination__item--counter"> {{page}} of {{pages}}</span>
+      {{#if next}}
+          <a class="pagination__item pagination__item--link pagination__item--newer" href="{{page_url next}}">后滚翻</a>
+      {{/if}}
+	    
+	</div>
+</nav>
