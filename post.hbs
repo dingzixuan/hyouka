@@ -24,7 +24,7 @@
                     </h2>
 
                     <time datetime="{{date format='YYYY-MM-DD'}}" class="post__date">
-                        {{date format="MMM, DD, YYYY"}}
+                        {{date format="YYYY-MM-DD"}}
                     </time> 
                 </header>
 
@@ -34,7 +34,7 @@
 
                 <footer class="post__footer">
                     <div class="social social--share">
-                        <span class="social__label">Share: </span>
+                        <!-- <span class="social__label">Share: </span>
                         <a class="social__icon social__icon--twitter" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
                             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                             <span class="social__icon--hidden">Twitter</span>
@@ -46,7 +46,17 @@
                         <a class="social__icon social__icon--gplus" href="https://plus.google.com/share?url={{url absolute="true"}}"
                            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                             <span class="social__icon--hidden">Google+</span>
-                        </a>
+                        </a> -->
+                        <!-- JiaThis Button BEGIN -->
+                        <div class="jiathis_style">
+                            <a class="jiathis_like_tsina" data="width=120"></a>
+                            <a class="jiathis_like_qzone"></a>
+                        </div>
+                        <script type="text/javascript">
+                        var jiathis_config = {data_track_clickback:'true'};
+                        </script>
+                        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1583180" charset="utf-8"></script>
+                        <!-- JiaThis Button END -->
                     </div>
                     
                     {{#if tags}}
