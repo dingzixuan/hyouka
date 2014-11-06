@@ -441,6 +441,13 @@ main {
 	font-weight: normal;
 	line-height: 1.2;
 	margin: 50px 0 5px 0;
+}
+
+.post__title--staticpage {
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 50px 0 5px 0;
 	text-align: center;
 }
 
