@@ -2,11 +2,11 @@
 <nav class="pagination">
     <div class="pagination__wrap">
 	    {{#if prev}}
-          <a class="pagination__item pagination__item--link pagination__item--older" href="{{page_url prev}}">前滚翻</a>
+          <a class="pagination__item pagination__item--link pagination__item--older" href="{{page_url prev}}">上一页</a>
       {{/if}}
-	   	<span class="pagination__item pagination__item--counter"> {{page}} of {{pages}}</span>
+	   	<span class="pagination__item pagination__item--counter"> {{page}} / {{pages}}</span>
       {{#if next}}
-          <a class="pagination__item pagination__item--link pagination__item--newer" href="{{page_url next}}">后滚翻</a>
+          <a class="pagination__item pagination__item--link pagination__item--newer" href="{{page_url next}}">下一页</a>
       {{/if}}
 	    
 	</div>
