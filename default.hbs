@@ -43,6 +43,7 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
+
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
@@ -65,10 +66,20 @@
     </script>
 
     <!-- JiaThis Button BEGIN -->
-    <script type="text/javascript">
-    var jiathis_config = {data_track_clickback:'true'};
+    <script type="text/javascript" >
+    var jiathis_config={
+      data_track_clickback:true,
+      siteNum:10,
+      sm:"copy,tsina,qzone,tqq,weixin,tieba,douban,twitter,evernote,ishare",
+      summary:"",
+      showClose:true,
+      shortUrl:false,
+      hideMore:false
+    }
     </script>
-    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;btn=r2.gif&amp;uid=1583180" charset="utf-8"></script>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1583180&btn=r2.gif&move=0" charset="utf-8"></script>
     <!-- JiaThis Button END -->
+
+
 </body>
 </html>

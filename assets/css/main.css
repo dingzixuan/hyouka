@@ -65,6 +65,9 @@ h6 { font-size: 16px; }
 iframe {
 	border: none;
 }
+.jiathis_style img {
+	max-width: none;
+}
 
 /* Transitions */
 a,
