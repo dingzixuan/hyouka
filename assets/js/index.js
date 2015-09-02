@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for Portfolio behaviours
  */
 
 /*globals jQuery, document */
@@ -65,6 +65,12 @@
                   }, 250);
                 }          
               }, 500);
+              // 
+              wrapper.click(function() {
+              	if(wrapper.find('.post__title_link').length) {
+              		window.location.href = wrapper.find('.post__title_link').attr('href');
+              	}
+              });
               // add necessary mouse events
               wrapper.mouseenter(function() {
                 wrapper.addClass('post__wrapper_helper--hover');

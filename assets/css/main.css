@@ -1,8 +1,8 @@
 /*---------------------------------
 
  Portfolio Ghost Theme by GavickPro
-           07-10-2014
-             v.1.2.0
+           22-04-2015
+             v.1.4.0
 
 - - - - - - - - - - - - - - - - - -
 
@@ -14,6 +14,7 @@
 	2.3 Footer
 	2.4 Pagination
 3. Post items
+	3.1 Post navigation
 4. Typography
 5. RWD
 
@@ -55,7 +56,7 @@ h4,
 h5,
 h6 { 
 	color: #363636;
-	font-weight: 500;
+	font-weight: 600;
 }
 h2 { font-size: 28px; }
 h3 { font-size: 24px; }
@@ -346,7 +347,7 @@ main {
 	box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	margin: 0 auto;
 	padding: 72px 72px 20px 72px;
-	width: 900px;
+	width: 700px;
 }
 
 .post__wrapper[data-cols="2"] { width: 50%; }
@@ -359,6 +360,7 @@ main {
 	-moz-box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	-ms-box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	box-shadow: 0 0 13px rgba(0, 0, 0, .07);
+	cursor: pointer;
 	height: 380px;
 	overflow: hidden;
 	opacity: 0;
@@ -446,14 +448,6 @@ main {
 	margin: 50px 0 5px 0;
 }
 
-.post__title--staticpage {
-	font-size: 32px;
-	font-weight: normal;
-	line-height: 1.2;
-	margin: 50px 0 5px 0;
-	text-align: center;
-}
-
 .post__title_link {
 	color: #333;
 }
@@ -471,6 +465,7 @@ main {
 
 .post__media {
 	margin: -72px -72px 20px -72px;
+	text-align: center;
 }
 
 .post__excerpt {
@@ -554,7 +549,7 @@ main {
 
 .post__tag_link {
 	color: #b5b5b5;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .post__comments {
@@ -569,14 +564,10 @@ main {
 	-moz-box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	-ms-box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	box-shadow: 0 0 13px rgba(0, 0, 0, .07);
-	margin: 0 auto;
-	padding: 72px 72px 20px 72px;
-	width: 700px;
-}
-
-.author {
 	margin: 42px auto;
+	min-height: 145px;
 	padding: 32px 72px;
+	width: 700px;
 }
 
 .author__avatar {
@@ -601,6 +592,80 @@ main {
 }
 
 /*---------------------------------
+3.1. Post navigation
+----------------------------------*/
+
+.post__navigation {
+	height: 54px;
+	left: 0;	
+	position: fixed;
+	top: 50%;
+	width: 54px;
+}
+
+.post__navigation--next {
+	left: auto;
+	right: 0;
+}
+
+.post__navigation_link {
+	background: #333;
+	border-radius: 0 50% 50% 0;
+	display: block;
+	height: 54px;
+	margin-left: -12px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 54px;
+}
+
+.post__navigation_link--next {
+	border-radius: 50% 0 0 50%;
+	margin-left: auto;
+	margin-right: -12px;
+}
+
+.post__navigation_link:hover {
+	margin-left: 0;
+}
+
+.post__navigation_link--next:hover {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.post__navigation_link--prev:hover .post__navigation_icon {
+	text-indent: -10px;
+}
+
+.post__navigation_link--next:hover .post__navigation_icon {
+	text-indent: 10px;
+}
+
+.post__navigation_icon {
+	color: #fff;
+	display: block;
+	font-size: 40px;
+	font-style: normal;
+	line-height: 45px;
+	text-align: center;
+	text-indent: 6px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 54px;
+}
+
+.post__navigation_icon--next {
+	text-indent: -6px;
+}
+
+/*---------------------------------
 4. Typography
 ----------------------------------*/
 
@@ -608,7 +673,7 @@ blockquote {
 	border-left: 4px solid #59c0ab;
 	background: #fdfbec;
 	font-size: 12px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 2;
 	margin: 30px 0;
 	padding: 15px 30px 15px 45px;
