@@ -23,5 +23,5 @@ I'm trying to modify it !
 	you can use {{tag_cloud}} to generate the html content in the template, and you can modify it as you like  
 2.3 modify the `ghost/core/server/helpers/index.js` file:  
 	add `coreHelpers.tag_cloud = require('./tag_cloud');`  (about line 40)  
-	add `registerThemeHelper('tag_cloud', coreHelpers.tag_cloud);`  (about line 111)  
+	add `registerAsyncThemeHelper('tag_cloud', coreHelpers.tag_cloud);`  (about line 121)  
 	*see `core-server-helpers index.js` as reference*
