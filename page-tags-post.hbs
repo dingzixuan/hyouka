@@ -1,0 +1,26 @@
+{{!< default}}
+
+<main role="main">
+    <div class="main__wrapper">
+        {{#if @blog.navigation}}
+            {{navigation}}
+        {{/if}}
+        
+        <article class="{{post_class}}">
+
+            <div class="post__wrapper--subpage">    
+
+                <header class="post__header--subpage">
+
+                    <!-- <time datetime="{{date format='YYYY-MM-DD'}}" class="post__date">
+                        {{date format="YYYY-MM-DD"}}
+                    </time> --> 
+                </header>
+
+                <section class="post__content">
+                    {{tag_cloud limit="all"}}
+                </section>
+            </div>
+        </article>
+    </div>
+</main>
