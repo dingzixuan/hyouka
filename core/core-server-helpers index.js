@@ -108,7 +108,6 @@ registerHelpers = function (adminHbs) {
     registerThemeHelper('plural', coreHelpers.plural);
     registerThemeHelper('url', coreHelpers.url);
     registerThemeHelper('image', coreHelpers.image);
-    registerThemeHelper('tag_cloud', coreHelpers.tag_cloud);
 
     // Async theme helpers
     registerAsyncThemeHelper('body_class', coreHelpers.body_class);
@@ -119,6 +118,7 @@ registerHelpers = function (adminHbs) {
     registerAsyncThemeHelper('post_class', coreHelpers.post_class);
     registerAsyncThemeHelper('next_post', coreHelpers.next_post);
     registerAsyncThemeHelper('prev_post', coreHelpers.prev_post);
+    registerAsyncThemeHelper('tag_cloud', coreHelpers.tag_cloud);
 
     // Register admin helpers
     registerAdminHelper('asset', coreHelpers.asset);
