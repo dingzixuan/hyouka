@@ -59,16 +59,26 @@ h6 {
 	color: #363636;
 	font-weight: 600;
 }
-h2 { font-size: 28px; }
-h3 { font-size: 24px; }
-h4 { font-size: 20px; }
-h5 { font-size: 18px; }
-h6 { font-size: 16px; }
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 21px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
 iframe {
 	border: none;
 }
 .jiathis_style img {
 	max-width: none;
+}
+::-moz-selection {
+  background: rgb(180, 214, 243);
+}
+strong {
+	font-weight: 700;
+}
+::selection {
+  background: rgb(180, 214, 243);
 }
 
 /* Transitions */
@@ -348,7 +358,7 @@ main {
 	box-shadow: 0 0 13px rgba(0, 0, 0, .07);
 	margin: 0 auto;
 	padding: 72px 72px 20px 72px;
-	width: 700px;
+	width: 800px;
 }
 
 .post__wrapper[data-cols="2"] { width: 50%; }
@@ -555,7 +565,7 @@ main {
 
 .post__comments {
 	margin: 32px auto;
-	width: 700px;
+	width: 800px;
 }
 
 /* Author block */
@@ -568,7 +578,7 @@ main {
 	margin: 42px auto;
 	min-height: 145px;
 	padding: 32px 72px;
-	width: 700px;
+	width: 800px;
 }
 
 .author__avatar {
@@ -739,7 +749,7 @@ ul {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	.menu {
 		padding: 0 0 30px 0;
 		position: relative;
